@@ -17,7 +17,7 @@ resource "google_compute_firewall" "rules" {
   project     = var.project
   name        = var.firewallname
   network     = google_compute_network.vpc_network.name
-  description = "Creates firewall rule targeting tagged instances"
+  description = "Creates firewall rule targeting tagged instances version 2"
 
   allow {
     protocol  = "tcp"
